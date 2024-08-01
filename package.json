@@ -1,0 +1,23 @@
+{
+  "name": "string-calculator-tdd",
+  "version": "1.0.0",
+  "main": "stringCalculator.js",
+  "scripts": {
+    "start": "node stringCalculator.js ",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiashish2112/string-calculator-tdd.git"
+  },
+  "author": "saiashish repal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saiashish2112/string-calculator-tdd/issues"
+  },
+  "homepage": "https://github.com/saiashish2112/string-calculator-tdd#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
