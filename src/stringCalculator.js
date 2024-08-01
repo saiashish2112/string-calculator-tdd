@@ -3,11 +3,14 @@ function add(numbers) {
     return 0;
   }
 
-  if (!numbers.includes(",")) {
-    return parseInt(numbers);
+  let delimiter = /[\n,]/;
+  if (numbers.startsWith("//")) {
+    const parts = numbers.split("\n");
+    delimiter = new RegExp(parts[0][2]);
+    numbers = parts[1];
   }
 
-  const nums = numbers.split(/[\n,]/).map(Number);
+  const nums = numbers.split(delimiter).map(Number);
 
   return nums.reduce((a, b) => a + b, 0);
 }
