@@ -3,6 +3,10 @@ function add(numbers) {
     return 0;
   }
 
+  if (!numbers.includes(",")) {
+    return parseInt(numbers);
+  }
+
   return 0;
 }
 
