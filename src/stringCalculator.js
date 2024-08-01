@@ -7,7 +7,7 @@ function add(numbers) {
     return parseInt(numbers);
   }
 
-  const nums = numbers.split(",").map(Number);
+  const nums = numbers.split(/[\n,]/).map(Number);
 
   return nums.reduce((a, b) => a + b, 0);
 }
